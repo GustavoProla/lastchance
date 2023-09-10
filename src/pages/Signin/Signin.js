@@ -23,8 +23,11 @@ const Signin = () => {
       return;
     }
 
-    navigate("/home");
+    navigate("/workspace");
   };
+
+
+
 
   return (
     <>
@@ -44,6 +47,10 @@ const Signin = () => {
         <label>
         Não tem uma conta?
         <Link to="/signup">&nbsp;Registre-se</Link>
+        </label>
+        <label>
+          Deseja entrar como Guest?
+          <Link to="/home">&nbsp;Acesse</Link>
         </label>
     </form>
   </>
